@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 const App = () => {
-  const [tasks, setTasks] = useState([""]);
+  const [tasks, setTasks] = useState(["Enter a note in the box below !"]);
   const [itemValue, setItemValue] = useState("");
   return (
     <div className="App">
