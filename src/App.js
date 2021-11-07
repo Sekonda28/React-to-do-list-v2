@@ -6,30 +6,32 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 const App = () => {
-  const [tasks, setTasks] = useState(["Placeholder"]);
+  const [tasks, setTasks] = useState([""]);
   const [itemValue, setItemValue] = useState("");
   return (
     <div className="App">
       <Header />
-
-      {tasks.map((task, index) => {
-        return (
-          <TaskList
-            note={task}
-            key={index}
-            id={index}
-            tasks={tasks}
-            setTasks={setTasks}
-          />
-        );
-      })}
-
-      <AddTask
-        setItemValue={setItemValue}
-        itemValue={itemValue}
-        setTasks={setTasks}
-        tasks={tasks}
-      />
+      <div className="container">
+      <div className = "task-list">
+        {tasks.map((task, index) => {
+          return (
+            <TaskList
+              note={task}
+              key={index}
+              id={index}
+              tasks={tasks}
+              setTasks={setTasks}
+            />
+          );
+        })}
+</div>
+        <AddTask
+          setItemValue={setItemValue}
+          itemValue={itemValue}
+          setTasks={setTasks}
+          tasks={tasks}
+        />
+      </div>
       <Footer />
     </div>
   );

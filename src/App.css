@@ -1,1 +1,121 @@
-/* Other rules */
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    max-width: 1920px;
+    max-height: 100vh;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+header {
+    max-width: 1440px;
+    display: flex;
+    height: 200px;
+    padding: 100px;
+    align-items: center;
+}
+
+header .far {
+
+    color: #5C48D3;
+    padding-right: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    max-height: auto;
+    flex-wrap: wrap;
+}
+
+.task-list {
+    min-height: 300px;
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+
+}
+
+li {
+    list-style-type: disc;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+
+.add-item {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.add-item input {
+    height: 65px;
+    width: 550px;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    font-size: 24px
+}
+
+.add-item button {
+    height: 65px;
+    width: 130px;
+    background-color: #5C48D3;
+    font-size: 24px;
+    color: white;
+    border-radius: 15px
+}
+
+li span {
+    padding-right: 20px
+}
+
+
+button {
+    color: #5C48D3;
+    background-color: white;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+footer {
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    bottom: 0;
+    text-align: center;
+    font-size: 15px;
+    color: #5C48D3;
+}
+
+footer span {
+    font-weight: 700;
+}
+
+@media(max-width: 780px) {
+    header {
+
+        padding: 50px;
+    }
+
+}
